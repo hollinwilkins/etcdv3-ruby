@@ -28,7 +28,8 @@ class Etcdv3
         kv: Etcdv3::KV,
         maintenance: Etcdv3::Maintenance,
         lease: Etcdv3::Lease,
-        watch: Etcdv3::Watch
+        watch: Etcdv3::Watch,
+        cluster: Etcdv3::Cluster
       }
     end
   end

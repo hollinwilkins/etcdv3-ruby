@@ -10,6 +10,7 @@ require 'etcdv3/maintenance'
 require 'etcdv3/lease'
 require 'etcdv3/request'
 require 'etcdv3/watch'
+require 'etcdv3/cluster'
 
 class Etcdv3
 
@@ -146,6 +147,10 @@ class Etcdv3
   # Returns information regarding the current state of the lease
   def lease_ttl(id)
     request.handle(:lease, 'lease_ttl', [id])
+  end
+
+  def member_list
+    request.handle(:cluster, 'member_list')
   end
 
   # List all roles.

@@ -130,6 +130,11 @@ describe Etcdv3 do
       it { is_expected.to_not be_nil }
     end
 
+    describe '#member_list' do
+      subject { conn.member_list }
+      it { is_expected.to_not be_nil }
+    end
+
     describe '#user_add' do
       after { conn.user_delete('test') }
       subject { conn.user_add('test', 'user') }
