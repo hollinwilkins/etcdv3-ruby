@@ -3,6 +3,7 @@ require 'grpc'
 require 'uri'
 
 require 'etcdv3/etcdrpc/rpc_services_pb'
+require 'etcdv3/etcdrpc/v3lock_services_pb'
 require 'etcdv3/auth'
 require 'etcdv3/kv/requests'
 require 'etcdv3/kv/transaction'
